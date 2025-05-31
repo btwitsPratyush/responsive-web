@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website Example</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">ResponsiveSite</div>
+                <nav>
+                    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Welcome to Our Responsive Website</h1>
+            <p>Experience seamless design that adapts perfectly to any device. From desktop to mobile, we've got you covered with modern, responsive web design.</p>
+            <a href="#features" class="cta-button">Explore Features</a>
+        </div>
+    </section>
+
+    <main class="main-content" id="about">
+        <div class="container">
+            <div class="content-grid">
+                <article class="article">
+                    <h2>Responsive Design Principles</h2>
+                    <p>This website demonstrates key responsive design principles using CSS media queries. The layout adapts seamlessly from desktop to tablet to mobile, ensuring an optimal user experience across all devices.</p>
+                    
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 300'><rect fill='%23e1f5fe' width='800' height='300'/><rect fill='%2381c784' x='50' y='50' width='200' height='150' rx='10'/><rect fill='%23ffb74d' x='300' y='50' width='200' height='150' rx='10'/><rect fill='%23f06292' x='550' y='50' width='200' height='150' rx='10'/><text x='150' y='135' text-anchor='middle' fill='white' font-family='Arial' font-size='16'>Desktop</text><text x='400' y='135' text-anchor='middle' fill='white' font-family='Arial' font-size='16'>Tablet</text><text x='650' y='135' text-anchor='middle' fill='white' font-family='Arial' font-size='16'>Mobile</text></svg>" alt="Responsive Design Illustration" class="article-image">
+                    
+                    <p>Key techniques implemented include flexible grid layouts, scalable images, and strategic breakpoints at 768px and 480px. The navigation transforms from a horizontal menu to a collapsible mobile menu, while the content reflows from multi-column to single-column layouts.</p>
+                    
+                    <p>Images are constrained to their containers, text sizes are optimized for readability, and touch targets are appropriately sized for mobile interaction. The design maintains visual hierarchy and brand consistency across all screen sizes.</p>
+                </article>
+
+                <aside class="sidebar">
+                    <h3>Quick Tips</h3>
+                    <div class="sidebar-item">
+                        <strong>Mobile-First:</strong> Start with mobile design and enhance for larger screens.
+                    </div>
+                    <div class="sidebar-item">
+                        <strong>Flexible Images:</strong> Use max-width: 100% to prevent overflow.
+                    </div>
+                    <div class="sidebar-item">
+                        <strong>Touch Targets:</strong> Ensure buttons are at least 44px for easy tapping.
+                    </div>
+                    <div class="sidebar-item">
+                        <strong>Test Thoroughly:</strong> Use Chrome DevTools to test all breakpoints.
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Responsive Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile Navigation</h3>
+                    <p>Collapsible hamburger menu that transforms the desktop navigation into a mobile-friendly overlay.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Flexible Layouts</h3>
+                    <p>CSS Grid and Flexbox create layouts that adapt seamlessly from multi-column to single-column.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🖼️</div>
+                    <h3>Responsive Images</h3>
+                    <p>Images scale proportionally and never overflow their containers, maintaining aspect ratios.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>Optimized Performance</h3>
+                    <p>Efficient CSS media queries ensure fast loading and smooth interactions on all devices.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Touch-Friendly</h3>
+                    <p>Properly sized interactive elements make navigation easy on touch devices.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Modern CSS</h3>
+                    <p>Uses contemporary CSS techniques including Grid, Flexbox, and smooth transitions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Our Team</a>
+                    <a href="#">Careers</a>
+                    <a href="#">News</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <a href="#">Web Design</a>
+                    <a href="#">Development</a>
+                    <a href="#">SEO</a>
+                    <a href="#">Consulting</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <a href="#">Email Us</a>
+                    <a href="#">Phone</a>
+                    <a href="#">Support</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+            <p>&copy; 2025 ResponsiveSite. Demonstrating mobile-friendly design with CSS media queries.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
